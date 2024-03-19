@@ -254,9 +254,11 @@ section.projects{
 
 }
 
-h2.projects{
+h2.projects,
+h2.announcements,
+h2.trending{
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 1rem;
 }
 
@@ -277,7 +279,7 @@ div.project-card{
 }
 
 div.project-card p.title{
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.125rem;
   margin-bottom: 0.5rem;
 }
@@ -306,3 +308,31 @@ section.trending{
   width: 300px
 }
 
+div.announcements-wrapper,
+div.trending-wrapper{
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.342);
+}
+
+div.announcements:nth-child(2){
+  border-top: 1px solid rgba(175, 175, 175, 0.336);
+  border-bottom: 1px solid rgba(175, 175, 175, 0.336);
+  padding: 1rem 0;
+}
+
+
+div.announcements+ .announcements{
+  margin-top: 1rem;
+}
+
+div.announcements p.title{
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+  font-size: .9rem;
+}
+div.announcements p.description{
+  font-size: 0.85rem;
+  color: var(--grey-text);
+}
