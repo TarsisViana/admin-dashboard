@@ -336,3 +336,35 @@ div.announcements p.description{
   font-size: 0.85rem;
   color: var(--grey-text);
 }
+
+div.trending-wrapper{
+  padding: 1rem;
+}
+
+a.trending{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  margin-bottom: 1rem;
+}
+
+div.trending-user:nth-child(4) a.trending{
+  margin-bottom: 0rem;
+}
+
+a.trending img{
+  height: 55px;
+  width: 55px;
+  grid-row: span 2;
+  margin-right: 1rem;
+}
+
+a.trending p:nth-child(2){
+  align-self: flex-end;
+  margin-bottom: 4px;
+  font-size: 0.9rem;
+}
+a.trending p:nth-child(3){
+  color: var(--grey-text);
+  font-size: 0.9rem;
+}
